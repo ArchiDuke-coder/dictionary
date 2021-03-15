@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const eng = ['cat', 'ape', 'bear'];
+    const viet = ['mèo', 'khỉ', 'gấu'];
+    let str = prompt('Nhập từ cần tra: ');
+    let found = true;
+    for (let i=0; i < eng.length; i++){
+        if (str == eng[i]){
+            alert(viet[i]);
+            found = false;
+        }
+    }
+    if (found){
+        alert('Không tìm thấy');
+    }
+</script>
